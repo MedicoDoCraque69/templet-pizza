@@ -49,11 +49,21 @@ li {
 .header_area {
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
-left: 0;
-z-index: 9;
-padding: 20px 0;
+  z-index: 9;
+  background: transparent;
 }
+
+.header_area .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  max-width: 1200px; /* Ou o que preferir */
+  margin: 0 auto;
+}
+
 .header-area.header_black {
   border-bottom: 1px solid #EDDFC6;
 }
@@ -172,10 +182,14 @@ transition: .4s;
   padding-left: 25px;
 }
 .header_tools {
-  padding-left: 50px;
+  padding-left: 0px;
 }
 .header_tools img {
   width: 20px;
+}
+.cart_count {
+  position: relative; /* ADICIONE ISSO */
+  display: inline-block;
 }
 
 .cart_count span {
@@ -188,7 +202,6 @@ transition: .4s;
   text-align: center;
   line-height: 15px;
   font-size: 10px;
-  display: inline-block;
   font-weight: 700;
   right: -8px;
   top: 2px;
